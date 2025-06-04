@@ -1,0 +1,23 @@
+{
+  "name": "qa-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/helper-replace-supers": "^7.27.1",
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "cypress": "^14.4.0",
+    "esbuild": "^0.25.5",
+    "require-from-string": "^2.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": true,
+    "stepDefinitions": "cypress/e2e/features/**/*.js"
+  }
+}
